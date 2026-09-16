@@ -1,6 +1,7 @@
 from fastapi import FastAPI
-from app.routes.livestream import router as livestream_router
 
+from app.routes.livestream import router as livestream_router
+from app.routes.auth import router as auth_router
 
 app = FastAPI()
 
@@ -13,3 +14,4 @@ def home():
 
 
 app.include_router(livestream_router)
+app.include_router(auth_router)

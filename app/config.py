@@ -1,0 +1,10 @@
+import os
+
+from dotenv import load_dotenv
+
+load_dotenv()
+
+LIVEPUSH_CLIENT_ID = os.getenv("LIVEPUSH_CLIENT_ID")
+LIVEPUSH_CLIENT_SECRET = os.getenv("LIVEPUSH_CLIENT_SECRET")
+LIVEPUSH_REDIRECT_URI = os.getenv("LIVEPUSH_REDIRECT_URI")
+LIVEPUSH_ACCESS_TOKEN = os.getenv("LIVEPUSH_ACCESS_TOKEN")
